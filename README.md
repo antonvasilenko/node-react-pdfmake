@@ -5,10 +5,6 @@ pdfmake is only loaded in iframe and only when you request `print`, `open` or `s
 
 How to use pdfmake and create document definitions - http://pdfmake.org/
 
-Install:
-
-`npm install --save artursgirons/node-react-pdfmake#master`
-
 Mount assets:
 ```javascript
 import mountCreatePdfApp from 'node-react-pdfmake/node'
@@ -18,7 +14,7 @@ app.use('/createpdf', mountCreatePdfApp())
 
 Create component:
 ```javascript
-import CreatePDF from 'node-react-pdfmake/component'
+import { CreatePDF } from 'node-react-pdfmake'
 ...
 <div>
   ...
