@@ -1,3 +1,16 @@
 {
-  "extends": "veve-react"
+  "parser": "babel-eslint",
+  "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "mocha": true,
+    "jasmine": true
+  },
+  "extends": "airbnb"
 }
