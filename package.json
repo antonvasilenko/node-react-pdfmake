@@ -34,7 +34,7 @@
     "index.js",
     "assets/",
     "node/",
-    "src/"
+    "dist/"
   ],
   "readmeFilename": "README.md"
 }
