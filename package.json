@@ -7,7 +7,9 @@
     "build": "npm install && npm run lint && npm run build:clean && npm run build:components",
     "build:clean": "rimraf dist && mkdir dist",
     "build:components": "babel components --out-dir dist -D",
-    "lint": "eslint --color \"components/**\""
+    "lint": "eslint --color \"components/**\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-cli": "^6.10.1",
@@ -27,7 +29,8 @@
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.0.1",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0"
+    "react": "^16.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "files": [
@@ -36,5 +39,6 @@
     "node/",
     "dist/"
   ],
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "snyk": true
 }
